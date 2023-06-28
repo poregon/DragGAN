@@ -32,6 +32,10 @@ class GlfwWindow: # pylint: disable=too-many-public-methods
         # Create window.
         glfw.init()
         glfw.window_hint(glfw.VISIBLE, False)
+        glfw.window_hint(glfw.CONTEXT_VERSION_MAJOR, 3)
+        glfw.window_hint(glfw.CONTEXT_VERSION_MINOR, 3)
+        glfw.window_hint(glfw.OPENGL_FORWARD_COMPAT, gl.GL_TRUE)
+        glfw.window_hint(glfw.OPENGL_PROFILE, glfw.OPENGL_CORE_PROFILE)
         self._glfw_window = glfw.create_window(width=window_width, height=window_height, title=title, monitor=None, share=None)
         self._attach_glfw_callbacks()
         self.make_context_current()
