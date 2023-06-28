@@ -8,7 +8,6 @@ dependencies:
   - numpy>=1.25
   - click>=8.0
   - pillow=9.4.0
-  - scipy=1.11.0
   - pytorch>=2.0.1
   - torchvision>=0.15.2
   - cudatoolkit=11.1
@@ -20,6 +19,7 @@ dependencies:
   - pip:
     - imgui==2.0.0
     - glfw==2.6.1
+    - scipy==1.11.0
     - gradio==3.35.2
     - pyopengl==3.1.5
     - imageio-ffmpeg==0.4.3
